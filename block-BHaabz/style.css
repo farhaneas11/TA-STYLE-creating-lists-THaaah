@@ -1,0 +1,369 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom */
+.container{margin: 0px auto;
+    max-width: 90%;
+    padding: 0px 32px;
+}
+
+.clearfix::before,.clearfix::after{
+content:"";display:table;
+}
+.clearfix::after{
+clear:both;
+}
+
+/* head  */
+header {
+    padding: 20px;
+    background-color: rgb(50, 51, 71);
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2 {
+    color: whitesmoke;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 20px;
+}
+a:hover{
+    color: wheat;
+}
+.img {
+    width: 20px;
+    height: auto;
+}
+.menu {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    margin: 15px;
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 8px black;
+    display: none;
+    transform: translateX(-130px);
+    top: 20px;
+}
+.menu li {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    margin: 0px 0px;   
+    background-color: white;
+    
+}
+.sub-menu {
+    position: relative;
+}
+.menu a {
+    color: black;
+    font-weight: 400;
+}
+.menu a:hover{
+    color: wheat;
+}
+.sub-menu:hover .menu{
+    display: inline-block;
+} 
+
+/* main  */
+.one {
+    
+    padding: 80px;
+    background: linear-gradient( rgb(50, 51, 71),rgba(57, 57, 65, 0.911));
+}
+.center {
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    margin: 10px 0px;
+    color:whitesmoke ;
+    letter-spacing: 2px;
+}
+h3 {
+    color: rgba(253, 51, 51, 0.808);
+    font-size: 20px;
+    margin: 40px 0px;
+}
+.center .button {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(192, 69, 69, 0.808);
+    color: whitesmoke;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.center .button:hover {
+    color: wheat;
+}
+/*  second  */
+.two {
+    padding: 60px;
+    background-color: rgb(226, 236, 226);
+}
+.par {
+    text-align: center;
+    margin: 10px 100px;
+}
+.heading {
+    text-align: center;
+}
+
+h4 {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.788);
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.box1 {
+    padding: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 8px black;
+    margin: 30px 30px;
+}
+.small {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 10px 0px;
+}
+.second {
+    color: rgba(105, 99, 99, 0.842);
+    margin: 20px 0px;
+}
+
+/*  three   */
+.container2 {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.three {
+    background-color:rgb(233,108,119);
+    padding: 60px;
+}
+.boxx {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.box11 {
+    padding: 20px;
+    width: 35%;
+    height: 250px;
+    background-color:rgb(236,130,140)  ; 
+   
+    text-align: center;
+    margin: 10px 10px;
+}
+.now {
+    color: whitesmoke;
+    font-size: 30px;
+    
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+.secondd {
+    color: whitesmoke;
+    margin: 10px 0px;
+    line-height: 25px;
+}
+
+/*fourth    */
+
+.four {
+    background-color: white;
+    padding:60px ;
+}
+.small1 {
+    width: auto;
+    height: 200px;
+}
+.box2 {
+    padding: 10px;
+    text-align: center;   
+    
+    margin: 30px 5px;
+}
+.li .learn {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    color: black;
+    margin: 20px 0px;
+    font-weight: bolder;
+    font-size: 15px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+/* fifth  */
+.box3 {
+    display: flex;
+    justify-content:space-evenly ;
+    height: 60vh;
+    background-color: whitesmoke;
+}
+
+.fifth {
+    background-color: rgba(233, 224, 224, 0.836);
+    padding: 60px;
+}
+.left2 {
+    width: 45%;
+    height: auto;
+    margin-top: 20px;
+}
+.name {
+    border: 1px solid  grey;
+    height:40px ;
+    width: 92.5%;    
+    margin: 15px 0px;
+}
+.last {
+    font-size: 20px;
+    padding: 8px;
+    color: grey;
+}
+.dis {
+    border: 1px solid grey;
+    height: 200px;
+    width: 92.5%;
+    margin: 5px 0px;
+}
+.last1 {
+    font-size: 20px;
+    padding: 8px;
+    color: grey;
+}
+
+
+.right2 {
+    width:45% ;
+    height: auto;
+    margin-top: 20px;
+}
+.img1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.in {
+    display:flex;
+    margin: 10px 0px;
+    border-bottom: 1px solid grey;
+}
+.lea {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    color: black;
+    margin: 30px 10px;
+    font-weight: bolder;
+    font-size: 15px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    width: 70px;
+    display: inline-block;
+    
+}
+.but {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(192, 69, 69, 0.808);
+    color: whitesmoke;
+    margin: 30px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    width: 70px;
+    display: inline-block;
+}
+
+
+
+/* footer */
+
+footer {
+    background-color: rgba(175, 171, 171, 0.452);
+    padding:60px
+}
+h6 {
+    font-size: 13px;
+    color: rgba(158, 149, 149, 0.747);
+}
+.foot {
+    text-align: center;
+}
+.flex1 {
+    display: flex;
+    flex-direction: row;
+    color:rgba(158, 149, 149, 0.747) ;
+    font-size: 13px;
+    justify-content: center;
+    margin: 20px;
+}
